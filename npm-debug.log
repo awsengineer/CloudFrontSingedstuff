@@ -1,0 +1,447 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'aws-cloudfront-sign' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose config Skipping project config: /Users/mssalehi/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData aws-cloudfront-sign
+9 silly fetchNamedPackageData aws-cloudfront-sign
+10 silly mapToRegistry name aws-cloudfront-sign
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'aws-cloudfront-sign',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'aws-cloudfront-sign',
+13 silly mapToRegistry   name: 'aws-cloudfront-sign',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/aws-cloudfront-sign
+15 verbose request uri https://registry.npmjs.org/aws-cloudfront-sign
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 10:45:41 AM
+18 verbose request id 749f31e0b4eb47cd
+19 verbose etag W/"5823fd50-4a25"
+20 verbose lastModified Thu, 10 Nov 2016 04:53:36 GMT
+21 http request GET https://registry.npmjs.org/aws-cloudfront-sign
+22 http 304 https://registry.npmjs.org/aws-cloudfront-sign
+23 verbose headers { date: 'Sat, 21 Oct 2017 23:45:42 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   etag: 'W/"5823fd50-4a25"',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-syd1627-SYD',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1508629542.020601,VS0,VE54',
+23 verbose headers   vary: 'Accept-Encoding, Accept' }
+24 silly get cb [ 304,
+24 silly get   { date: 'Sat, 21 Oct 2017 23:45:42 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     etag: 'W/"5823fd50-4a25"',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-syd1627-SYD',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1508629542.020601,VS0,VE54',
+24 silly get     vary: 'Accept-Encoding, Accept' } ]
+25 verbose etag https://registry.npmjs.org/aws-cloudfront-sign from cache
+26 verbose get saving aws-cloudfront-sign to /Users/mssalehi/.npm/registry.npmjs.org/aws-cloudfront-sign/.cache.json
+27 verbose correctMkdir /Users/mssalehi/.npm correctMkdir not in flight; initializing
+28 silly install normalizeTree
+29 silly loadCurrentTree Finishing
+30 silly loadIdealTree Starting
+31 silly install loadIdealTree
+32 silly cloneCurrentTree Starting
+33 silly install cloneCurrentTreeToIdealTree
+34 silly cloneCurrentTree Finishing
+35 silly loadShrinkwrap Starting
+36 silly install loadShrinkwrap
+37 silly loadShrinkwrap Finishing
+38 silly loadAllDepsIntoIdealTree Starting
+39 silly install loadAllDepsIntoIdealTree
+40 silly resolveWithNewModule aws-cloudfront-sign@2.2.0 checking installable status
+41 silly cache add args [ 'aws-cloudfront-sign', null ]
+42 verbose cache add spec aws-cloudfront-sign
+43 silly cache add parsed spec Result {
+43 silly cache add   raw: 'aws-cloudfront-sign',
+43 silly cache add   scope: null,
+43 silly cache add   escapedName: 'aws-cloudfront-sign',
+43 silly cache add   name: 'aws-cloudfront-sign',
+43 silly cache add   rawSpec: '',
+43 silly cache add   spec: 'latest',
+43 silly cache add   type: 'tag' }
+44 silly addNamed aws-cloudfront-sign@latest
+45 verbose addNamed "latest" is being treated as a dist-tag for aws-cloudfront-sign
+46 info addNameTag [ 'aws-cloudfront-sign', 'latest' ]
+47 silly mapToRegistry name aws-cloudfront-sign
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry data Result {
+50 silly mapToRegistry   raw: 'aws-cloudfront-sign',
+50 silly mapToRegistry   scope: null,
+50 silly mapToRegistry   escapedName: 'aws-cloudfront-sign',
+50 silly mapToRegistry   name: 'aws-cloudfront-sign',
+50 silly mapToRegistry   rawSpec: '',
+50 silly mapToRegistry   spec: 'latest',
+50 silly mapToRegistry   type: 'tag' }
+51 silly mapToRegistry uri https://registry.npmjs.org/aws-cloudfront-sign
+52 verbose addNameTag registry:https://registry.npmjs.org/aws-cloudfront-sign not in flight; fetching
+53 verbose get https://registry.npmjs.org/aws-cloudfront-sign not expired, no request
+54 silly addNameTag next cb for aws-cloudfront-sign with tag latest
+55 silly addNamed aws-cloudfront-sign@2.2.0
+56 verbose addNamed "2.2.0" is a plain semver version for aws-cloudfront-sign
+57 silly cache afterAdd aws-cloudfront-sign@2.2.0
+58 verbose afterAdd /Users/mssalehi/.npm/aws-cloudfront-sign/2.2.0/package/package.json not in flight; writing
+59 verbose correctMkdir /Users/mssalehi/.npm correctMkdir not in flight; initializing
+60 verbose afterAdd /Users/mssalehi/.npm/aws-cloudfront-sign/2.2.0/package/package.json written
+61 silly fetchNamedPackageData lodash
+62 silly mapToRegistry name lodash
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'lodash',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   escapedName: 'lodash',
+65 silly mapToRegistry   name: 'lodash',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/lodash
+67 verbose request uri https://registry.npmjs.org/lodash
+68 verbose request no auth needed
+69 info attempt registry request try #1 at 10:45:42 AM
+70 verbose etag W/"59e8d364-2a105"
+71 verbose lastModified Thu, 19 Oct 2017 16:31:32 GMT
+72 http request GET https://registry.npmjs.org/lodash
+73 http 200 https://registry.npmjs.org/lodash
+74 verbose headers { server: 'nginx/1.10.3',
+74 verbose headers   'content-type': 'application/json',
+74 verbose headers   'last-modified': 'Fri, 20 Oct 2017 15:57:08 GMT',
+74 verbose headers   etag: 'W/"59ea1cd4-2a14f"',
+74 verbose headers   'content-encoding': 'gzip',
+74 verbose headers   'cache-control': 'max-age=300',
+74 verbose headers   'content-length': '18795',
+74 verbose headers   'accept-ranges': 'bytes',
+74 verbose headers   date: 'Sat, 21 Oct 2017 23:45:42 GMT',
+74 verbose headers   via: '1.1 varnish',
+74 verbose headers   age: '188',
+74 verbose headers   connection: 'keep-alive',
+74 verbose headers   'x-served-by': 'cache-syd1627-SYD',
+74 verbose headers   'x-cache': 'HIT',
+74 verbose headers   'x-cache-hits': '3',
+74 verbose headers   'x-timer': 'S1508629542.190907,VS0,VE0',
+74 verbose headers   vary: 'Accept-Encoding, Accept' }
+75 silly get cb [ 200,
+75 silly get   { server: 'nginx/1.10.3',
+75 silly get     'content-type': 'application/json',
+75 silly get     'last-modified': 'Fri, 20 Oct 2017 15:57:08 GMT',
+75 silly get     etag: 'W/"59ea1cd4-2a14f"',
+75 silly get     'content-encoding': 'gzip',
+75 silly get     'cache-control': 'max-age=300',
+75 silly get     'content-length': '18795',
+75 silly get     'accept-ranges': 'bytes',
+75 silly get     date: 'Sat, 21 Oct 2017 23:45:42 GMT',
+75 silly get     via: '1.1 varnish',
+75 silly get     age: '188',
+75 silly get     connection: 'keep-alive',
+75 silly get     'x-served-by': 'cache-syd1627-SYD',
+75 silly get     'x-cache': 'HIT',
+75 silly get     'x-cache-hits': '3',
+75 silly get     'x-timer': 'S1508629542.190907,VS0,VE0',
+75 silly get     vary: 'Accept-Encoding, Accept' } ]
+76 verbose get saving lodash to /Users/mssalehi/.npm/registry.npmjs.org/lodash/.cache.json
+77 verbose correctMkdir /Users/mssalehi/.npm correctMkdir not in flight; initializing
+78 silly resolveWithNewModule lodash@3.10.1 checking installable status
+79 silly cache add args [ 'lodash@^3.6.0', null ]
+80 verbose cache add spec lodash@^3.6.0
+81 silly cache add parsed spec Result {
+81 silly cache add   raw: 'lodash@^3.6.0',
+81 silly cache add   scope: null,
+81 silly cache add   escapedName: 'lodash',
+81 silly cache add   name: 'lodash',
+81 silly cache add   rawSpec: '^3.6.0',
+81 silly cache add   spec: '>=3.6.0 <4.0.0',
+81 silly cache add   type: 'range' }
+82 silly addNamed lodash@>=3.6.0 <4.0.0
+83 verbose addNamed ">=3.6.0 <4.0.0" is a valid semver range for lodash
+84 silly addNameRange { name: 'lodash', range: '>=3.6.0 <4.0.0', hasData: false }
+85 silly mapToRegistry name lodash
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry data Result {
+88 silly mapToRegistry   raw: 'lodash',
+88 silly mapToRegistry   scope: null,
+88 silly mapToRegistry   escapedName: 'lodash',
+88 silly mapToRegistry   name: 'lodash',
+88 silly mapToRegistry   rawSpec: '',
+88 silly mapToRegistry   spec: 'latest',
+88 silly mapToRegistry   type: 'tag' }
+89 silly mapToRegistry uri https://registry.npmjs.org/lodash
+90 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+91 verbose get https://registry.npmjs.org/lodash not expired, no request
+92 silly addNameRange number 2 { name: 'lodash', range: '>=3.6.0 <4.0.0', hasData: true }
+93 silly addNameRange versions [ 'lodash',
+93 silly addNameRange   [ '0.1.0',
+93 silly addNameRange     '0.2.0',
+93 silly addNameRange     '0.2.1',
+93 silly addNameRange     '0.2.2',
+93 silly addNameRange     '0.3.0',
+93 silly addNameRange     '0.3.1',
+93 silly addNameRange     '0.3.2',
+93 silly addNameRange     '0.4.0',
+93 silly addNameRange     '0.4.1',
+93 silly addNameRange     '0.4.2',
+93 silly addNameRange     '0.5.0-rc.1',
+93 silly addNameRange     '0.5.0',
+93 silly addNameRange     '0.5.1',
+93 silly addNameRange     '0.5.2',
+93 silly addNameRange     '0.6.0',
+93 silly addNameRange     '0.6.1',
+93 silly addNameRange     '0.7.0',
+93 silly addNameRange     '0.8.0',
+93 silly addNameRange     '0.8.1',
+93 silly addNameRange     '0.8.2',
+93 silly addNameRange     '0.9.0',
+93 silly addNameRange     '0.9.1',
+93 silly addNameRange     '0.9.2',
+93 silly addNameRange     '0.10.0',
+93 silly addNameRange     '1.0.0-rc.1',
+93 silly addNameRange     '1.0.0-rc.2',
+93 silly addNameRange     '1.0.0-rc.3',
+93 silly addNameRange     '1.0.0',
+93 silly addNameRange     '1.0.1',
+93 silly addNameRange     '1.1.0',
+93 silly addNameRange     '1.1.1',
+93 silly addNameRange     '1.2.0',
+93 silly addNameRange     '1.2.1',
+93 silly addNameRange     '1.3.0',
+93 silly addNameRange     '1.3.1',
+93 silly addNameRange     '2.0.0',
+93 silly addNameRange     '2.1.0',
+93 silly addNameRange     '2.2.0',
+93 silly addNameRange     '2.2.1',
+93 silly addNameRange     '2.3.0',
+93 silly addNameRange     '2.4.0',
+93 silly addNameRange     '2.4.1',
+93 silly addNameRange     '3.0.0',
+93 silly addNameRange     '3.0.1',
+93 silly addNameRange     '3.1.0',
+93 silly addNameRange     '3.2.0',
+93 silly addNameRange     '3.3.0',
+93 silly addNameRange     '3.3.1',
+93 silly addNameRange     '3.4.0',
+93 silly addNameRange     '3.5.0',
+93 silly addNameRange     '3.6.0',
+93 silly addNameRange     '1.0.2',
+93 silly addNameRange     '3.7.0',
+93 silly addNameRange     '2.4.2',
+93 silly addNameRange     '3.8.0',
+93 silly addNameRange     '3.9.0',
+93 silly addNameRange     '3.9.1',
+93 silly addNameRange     '3.9.2',
+93 silly addNameRange     '3.9.3',
+93 silly addNameRange     '3.10.0',
+93 silly addNameRange     '3.10.1',
+93 silly addNameRange     '4.0.0',
+93 silly addNameRange     '4.0.1',
+93 silly addNameRange     '4.1.0',
+93 silly addNameRange     '4.2.0',
+93 silly addNameRange     '4.2.1',
+93 silly addNameRange     '4.3.0',
+93 silly addNameRange     '4.4.0',
+93 silly addNameRange     '4.5.0',
+93 silly addNameRange     '4.5.1',
+93 silly addNameRange     '4.6.0',
+93 silly addNameRange     '4.6.1',
+93 silly addNameRange     '4.7.0',
+93 silly addNameRange     '4.8.0',
+93 silly addNameRange     '4.8.1',
+93 silly addNameRange     '4.8.2',
+93 silly addNameRange     '4.9.0',
+93 silly addNameRange     '4.10.0',
+93 silly addNameRange     '4.11.0',
+93 silly addNameRange     '4.11.1',
+93 silly addNameRange     '4.11.2',
+93 silly addNameRange     '4.12.0',
+93 silly addNameRange     '4.13.0',
+93 silly addNameRange     '4.13.1',
+93 silly addNameRange     '4.14.0',
+93 silly addNameRange     '4.14.1',
+93 silly addNameRange     '4.14.2',
+93 silly addNameRange     '4.15.0',
+93 silly addNameRange     '4.16.0',
+93 silly addNameRange     '4.16.1',
+93 silly addNameRange     '4.16.2',
+93 silly addNameRange     '4.16.3',
+93 silly addNameRange     '4.16.4',
+93 silly addNameRange     '4.16.5',
+93 silly addNameRange     '4.16.6',
+93 silly addNameRange     '4.17.0',
+93 silly addNameRange     '4.17.1',
+93 silly addNameRange     '4.17.2',
+93 silly addNameRange     '4.17.3',
+93 silly addNameRange     '4.17.4' ] ]
+94 silly addNamed lodash@3.10.1
+95 verbose addNamed "3.10.1" is a plain semver version for lodash
+96 silly cache afterAdd lodash@3.10.1
+97 verbose afterAdd /Users/mssalehi/.npm/lodash/3.10.1/package/package.json not in flight; writing
+98 verbose correctMkdir /Users/mssalehi/.npm correctMkdir not in flight; initializing
+99 verbose afterAdd /Users/mssalehi/.npm/lodash/3.10.1/package/package.json written
+100 silly loadAllDepsIntoIdealTree Finishing
+101 silly loadIdealTree Finishing
+102 silly currentTree mssalehi
+102 silly currentTree ├─┬ aws-cloudfront-sign@2.2.0
+102 silly currentTree │ └── lodash@3.10.1
+102 silly currentTree ├── aws-sdk@2.125.0
+102 silly currentTree ├── base64-js@1.2.1
+102 silly currentTree ├── buffer@4.9.1
+102 silly currentTree ├── crypto-browserify@1.0.9
+102 silly currentTree ├── events@1.1.1
+102 silly currentTree ├── ieee754@1.1.8
+102 silly currentTree ├── isarray@1.0.0
+102 silly currentTree ├── jmespath@0.15.0
+102 silly currentTree ├── lodash@4.17.4
+102 silly currentTree ├── punycode@1.3.2
+102 silly currentTree ├── querystring@0.2.0
+102 silly currentTree ├── sax@1.2.1
+102 silly currentTree ├── url@0.10.3
+102 silly currentTree ├── uuid@3.0.1
+102 silly currentTree ├── xml2js@0.4.17
+102 silly currentTree └── xmlbuilder@4.2.1
+103 silly idealTree mssalehi
+103 silly idealTree ├─┬ aws-cloudfront-sign@2.2.0
+103 silly idealTree │ └── lodash@3.10.1
+103 silly idealTree ├── aws-sdk@2.125.0
+103 silly idealTree ├── base64-js@1.2.1
+103 silly idealTree ├── buffer@4.9.1
+103 silly idealTree ├── crypto-browserify@1.0.9
+103 silly idealTree ├── events@1.1.1
+103 silly idealTree ├── ieee754@1.1.8
+103 silly idealTree ├── isarray@1.0.0
+103 silly idealTree ├── jmespath@0.15.0
+103 silly idealTree ├── lodash@4.17.4
+103 silly idealTree ├── punycode@1.3.2
+103 silly idealTree ├── querystring@0.2.0
+103 silly idealTree ├── sax@1.2.1
+103 silly idealTree ├── url@0.10.3
+103 silly idealTree ├── uuid@3.0.1
+103 silly idealTree ├── xml2js@0.4.17
+103 silly idealTree └── xmlbuilder@4.2.1
+104 silly generateActionsToTake Starting
+105 silly install generateActionsToTake
+106 silly generateActionsToTake Finishing
+107 silly diffTrees action count 1
+108 silly diffTrees update aws-cloudfront-sign@2.2.0
+109 silly decomposeActions action count 9
+110 silly decomposeActions remove aws-cloudfront-sign@2.2.0
+111 silly decomposeActions fetch aws-cloudfront-sign@2.2.0
+112 silly decomposeActions extract aws-cloudfront-sign@2.2.0
+113 silly decomposeActions test aws-cloudfront-sign@2.2.0
+114 silly decomposeActions preinstall aws-cloudfront-sign@2.2.0
+115 silly decomposeActions build aws-cloudfront-sign@2.2.0
+116 silly decomposeActions install aws-cloudfront-sign@2.2.0
+117 silly decomposeActions postinstall aws-cloudfront-sign@2.2.0
+118 silly decomposeActions finalize aws-cloudfront-sign@2.2.0
+119 silly runTopLevelLifecycles Starting
+120 silly executeActions Starting
+121 silly install executeActions
+122 silly doSerial global-install 0
+123 silly doParallel fetch 1
+124 verbose correctMkdir /Users/mssalehi/.npm/_locks correctMkdir not in flight; initializing
+125 verbose lock using /Users/mssalehi/.npm/_locks/staging-0e9ebfbb3c2c61a2.lock for /Users/mssalehi/node_modules/.staging
+126 silly doParallel extract 1
+127 silly extract aws-cloudfront-sign@2.2.0
+128 verbose unbuild node_modules/.staging/aws-cloudfront-sign-2ac69a90
+129 silly gentlyRm /Users/mssalehi/node_modules/.staging/aws-cloudfront-sign-2ac69a90 is being purged from base /Users/mssalehi
+130 verbose gentlyRm don't care about contents; nuking /Users/mssalehi/node_modules/.staging/aws-cloudfront-sign-2ac69a90
+131 verbose tar unpack /Users/mssalehi/.npm/aws-cloudfront-sign/2.2.0/package.tgz
+132 verbose tar unpacking to /Users/mssalehi/node_modules/.staging/aws-cloudfront-sign-2ac69a90
+133 silly gentlyRm /Users/mssalehi/node_modules/.staging/aws-cloudfront-sign-2ac69a90 is being purged
+134 verbose gentlyRm don't care about contents; nuking /Users/mssalehi/node_modules/.staging/aws-cloudfront-sign-2ac69a90
+135 silly gunzTarPerm modes [ '755', '644' ]
+136 silly gunzTarPerm extractEntry package.json
+137 silly gunzTarPerm extractEntry .npmignore
+138 silly gunzTarPerm extractEntry README.md
+139 silly gunzTarPerm extractEntry LICENSE
+140 silly gunzTarPerm extractEntry .travis.yml
+141 silly gunzTarPerm extractEntry CHANGELOG.md
+142 silly gunzTarPerm extractEntry .jshintignore
+143 silly gunzTarPerm extractEntry examples/signedURL.js
+144 silly gunzTarPerm extractEntry lib/CannedPolicy.js
+145 silly gunzTarPerm extractEntry lib/cloudfrontUtil.js
+146 silly gunzTarPerm extractEntry .jshintrc
+147 silly gunzTarPerm extractEntry test/files/dummy.pem
+148 silly gunzTarPerm extractEntry test/lib/CannedPolicy.test.js
+149 silly gunzTarPerm extractEntry test/lib/cloudfrontUtil.test.js
+150 silly gunzTarPerm extractEntry test/mocha.opts
+151 silly gentlyRm /Users/mssalehi/node_modules/.staging/aws-cloudfront-sign-2ac69a90/node_modules is being purged
+152 verbose gentlyRm don't care about contents; nuking /Users/mssalehi/node_modules/.staging/aws-cloudfront-sign-2ac69a90/node_modules
+153 silly doParallel preinstall 1
+154 silly preinstall aws-cloudfront-sign@2.2.0 /Users/mssalehi/node_modules/.staging/aws-cloudfront-sign-2ac69a90
+155 info lifecycle aws-cloudfront-sign@2.2.0~preinstall: aws-cloudfront-sign@2.2.0
+156 silly lifecycle aws-cloudfront-sign@2.2.0~preinstall: no script for preinstall, continuing
+157 silly doReverseSerial remove 1
+158 silly remove /Users/mssalehi/node_modules/aws-cloudfront-sign
+159 verbose unbuild node_modules/aws-cloudfront-sign
+160 info lifecycle aws-cloudfront-sign@2.2.0~preuninstall: aws-cloudfront-sign@2.2.0
+161 silly lifecycle aws-cloudfront-sign@2.2.0~preuninstall: no script for preuninstall, continuing
+162 info lifecycle aws-cloudfront-sign@2.2.0~uninstall: aws-cloudfront-sign@2.2.0
+163 silly lifecycle aws-cloudfront-sign@2.2.0~uninstall: no script for uninstall, continuing
+164 verbose unbuild rmStuff aws-cloudfront-sign@2.2.0 from /Users/mssalehi/node_modules
+165 info lifecycle aws-cloudfront-sign@2.2.0~postuninstall: aws-cloudfront-sign@2.2.0
+166 silly lifecycle aws-cloudfront-sign@2.2.0~postuninstall: no script for postuninstall, continuing
+167 silly gentlyRm /Users/mssalehi/node_modules/aws-cloudfront-sign is being purged from base /Users/mssalehi
+168 verbose gentlyRm don't care about contents; nuking /Users/mssalehi/node_modules/aws-cloudfront-sign
+169 silly vacuum-fs purging /Users/mssalehi/node_modules/aws-cloudfront-sign
+170 verbose unlock done using /Users/mssalehi/.npm/_locks/staging-0e9ebfbb3c2c61a2.lock for /Users/mssalehi/node_modules/.staging
+171 silly rollbackFailedOptional Starting
+172 silly rollbackFailedOptional Finishing
+173 silly runTopLevelLifecycles Finishing
+174 silly install printInstalled
+175 warn enoent ENOENT: no such file or directory, open '/Users/mssalehi/package.json'
+176 verbose enoent ENOENT: no such file or directory, open '/Users/mssalehi/package.json'
+176 verbose enoent This is most likely not a problem with npm itself
+176 verbose enoent and is related to npm not being able to find a file.
+177 warn mssalehi No description
+178 verbose If you need help, you may report this error at:
+178 verbose     <https://github.com/npm/npm/issues>
+179 warn mssalehi No repository field.
+180 verbose If you need help, you may report this error at:
+180 verbose     <https://github.com/npm/npm/issues>
+181 warn mssalehi No README data
+182 verbose If you need help, you may report this error at:
+182 verbose     <https://github.com/npm/npm/issues>
+183 warn mssalehi No license field.
+184 verbose If you need help, you may report this error at:
+184 verbose     <https://github.com/npm/npm/issues>
+185 verbose stack Error: EACCES: permission denied, rmdir '/Users/mssalehi/node_modules/aws-cloudfront-sign/node_modules/lodash'
+185 verbose stack     at Error (native)
+186 verbose cwd /Users/mssalehi/code/CloudFrontSingedCookies
+187 error Darwin 15.6.0
+188 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "aws-cloudfront-sign"
+189 error node v6.9.4
+190 error npm  v3.10.10
+191 error path /Users/mssalehi/node_modules/aws-cloudfront-sign/node_modules/lodash
+192 error code EACCES
+193 error errno -13
+194 error syscall rmdir
+195 error Error: EACCES: permission denied, rmdir '/Users/mssalehi/node_modules/aws-cloudfront-sign/node_modules/lodash'
+195 error     at Error (native)
+195 error  { Error: EACCES: permission denied, rmdir '/Users/mssalehi/node_modules/aws-cloudfront-sign/node_modules/lodash'
+195 error     at Error (native)
+195 error   errno: -13,
+195 error   code: 'EACCES',
+195 error   syscall: 'rmdir',
+195 error   path: '/Users/mssalehi/node_modules/aws-cloudfront-sign/node_modules/lodash' }
+196 error Please try running this command again as root/Administrator.
+197 verbose exit [ -13, true ]

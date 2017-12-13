@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><style>
+    	.dummies {display: none !important;}
+    	.dummy-holder {
+    		display: inline-block;
+    		background: linear-gradient(221deg, #F9F9F9, #E0E0E0);
+    		background-size: 400% 400%;
+    		-webkit-animation: AnimationName 2s ease infinite;
+    		-moz-animation: AnimationName 2s ease infinite;
+    		animation: AnimationName 2s ease infinite;
+    		}
+    		@-webkit-keyframes AnimationName {
+    			0%{background-position:0% 50%}
+    			50%{background-position:100% 50%}
+    			100%{background-position:0% 50%}
+    		}
+    		@-moz-keyframes AnimationName {
+    			0%{background-position:0% 50%}
+    			50%{background-position:100% 50%}
+    			100%{background-position:0% 50%}
+    		}
+    		@keyframes AnimationName { 
+    			0%{background-position:0% 50%}
+    			50%{background-position:100% 50%}
+    			100%{background-position:0% 50%}
+    		}
+    </style>
+    <script type="application/javascript">
+    	function check_url(url) {
+	// console.log(url);
+
+	if(url.match(/^\/(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#login_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/login[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#login_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/register[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#register_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard\/goals[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard\/profile[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_profile_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard\/questionnaire[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_questionnaire_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard\/goals\/add[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_goal_creation_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard\/fillaccount[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_fillaccount_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard\/transactions[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_transactions_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard\/reports[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_reports_dummy { display: flex !important; }</style>");
+		return true;
+	} else if(url.match(/^\/dashboard\/goals\/[0-9]*[\/]*(?![a-zA-Z0-9\-\_\#\/])/)) {
+		document.write("<style>#dashboard_goal_dummy { display: flex !important; }</style>");
+		return true;
+	}
+}
+
+var url = (location.pathname.match(/#/)) ? location.pathname.split("#")[0] : location.pathname;
+check_url(url);
+    </script>
+    <title>Binck Forward</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#f7941d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/mstile-310x310.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="application-name" content="Binck Forward">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/favicon.ico?v=3.0" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico?v=3.0">
+    <link rel="icon" type="image/png" href="/icons/favicon.png?v=3.0">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  </head>
+</html>
+<body ontouchstart="" data-hash="cef7cc762cc837bcf84e" class="body">
+  <div id="wrapper" class="row">
+    <div class="xlarge-24 large-24 medium-24 small-24 column align-self-top">
+      <header class="row align-center">
+        <div class="xlarge-16 large-18 medium-22 small-22 columns align-middle">
+          <div class="row align-justify align-middle small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="columns text-left">
+              <div class="logo"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="login_dummy" class="margin-top-12 dummies auth__content row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+        <div intro="fade" outro="fade" class="xlarge-16 large-18 medium-22 small-22 columns margin-top-2 margin-bottom-2">
+          <div class="row align-center">
+            <div class="xlarge-12 large-16 medium-16 small-24 columns margin-bottom-2">
+              <div class="well">
+                <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                  <div style="width: 70%; height: 50px" class="dummy-holder margin-bottom-2"></div>
+                  <div intro="fade" outro="fade" class="row">
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns relative margin-bottom-2">
+                      <div style="width: 90%; height: 30px" class="dummy-holder"></div>
+                    </div>
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns relative margin-bottom-2">
+                      <div style="width: 90%; height: 30px" class="dummy-holder"></div>
+                    </div>
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns relative margin-bottom-2 align-right">
+                      <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                    </div>
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                      <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="register_dummy" class="margin-top-12 dummies auth__content row align-center row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+        <div class="xlarge-16 large-18 medium-22 small-22 columns margin-top-2 margin-bottom-2">
+          <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-12 large-16 medium-16 small-24 columns">
+              <div class="well">
+                <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                  <div style="width: 70%; height: 50px" class="dummy-holder"></div>
+                  <hr>
+                </div>
+                <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                  <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                </div>
+                <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                  <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                </div>
+                <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                  <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                </div>
+                <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                  <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                </div>
+                <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                  <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                </div>
+                <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                  <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dashboard_dummy" class="margin-top-12 dummies auth__content row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+        <div class="xlarge-24 large-24 medium-24 small-24 column">
+          <div class="section content transparent row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <div class="row align-justify align-middle">
+                <div class="xlarge-18 large-18 medium-18 small-24 columns hide-for-small-only">
+                  <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                </div>
+                <div class="xlarge-6 large-6 medium-6 small-24 columns text-right">
+                  <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-center">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns margin-top-2">
+              <div class="row">
+                <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                  <div class="well row">
+                    <div class="xlarge-12 large-14 medium-15 small-24 columns text-center hide-for-small-only">
+                      <div class="avatar__wrapper">
+                        <div class="avatar"></div>
+                      </div>
+                    </div>
+                    <div class="xlarge-12 large-10 medium-7 small-24 columns">
+                      <div class="row">
+                        <div class="xlarge-24 large-24 medium-24 small-24 columns text-center margin-bottom-1">
+                          <div style="width: 30%; height: 30px" class="dummy-holder"></div>
+                        </div>
+                        <div class="xlarge-24 large-24 medium-24 small-24 columns text-center">
+                          <div style="width: 70%; height: 30px" class="dummy-holder margin-bottom-1"></div>
+                          <div class="row text-center">
+                            <div class="columns">
+                              <div style="width: 50%; height: 30px" class="dummy-holder"></div>
+                            </div>
+                            <div class="columns">
+                              <div style="width: 50%; height: 30px" class="dummy-holder"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dashboard_goal_creation_dummy" class="margin-top-12 dummies auth__content row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+        <div class="xlarge-24 large-24 medium-24 small-24 column">
+          <div class="section content transparent row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <ul class="breadcrumbs flow">
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="xlarge-24 large-24 medium-24 small-24 columns margin-top-2">
+          <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <div class="row">
+                <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                  <div class="well">
+                    <div style="width: 70%; height: 50px" class="dummy-holder margin-bottom-2"></div>
+                    <div class="row">
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                        <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns text-right">
+                        <div style="width: 40%; height: 50px" class="dummy-holder"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dashboard_fillaccount_dummy" class="margin-top-12 dummies auth__content row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+        <div class="xlarge-24 large-24 medium-24 small-24 column">
+          <div class="section content transparent row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <ul class="breadcrumbs flow">
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="xlarge-24 large-24 medium-24 small-24 columns margin-top-2">
+          <div class="row align-center">
+            <div class="xlarge-24 large-24 medium-24 small-24 columns">
+              <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+                <div class="xlarge-16 large-18 medium-22 small-22 columns">
+                  <div class="well row">
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                      <div class="row">
+                        <div class="xlarge-24 large-24 medium-24 small-24 columns relative margin-bottom-2">
+                          <div style="width: 70%; height: 50px" class="dummy-holder"></div>
+                        </div>
+                        <div class="xlarge-12 large-12 medium-12 small-24 columns relative margin-bottom-2">
+                          <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                        </div>
+                        <div class="xlarge-12 large-12 medium-12 small-24 columns relative margin-bottom-2">
+                          <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                        </div>
+                        <div class="xlarge-12 large-12 medium-12 small-24 columns relative margin-bottom-2">
+                          <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                        </div>
+                        <div class="xlarge-12 large-12 medium-12 small-24 columns relative margin-bottom-2">
+                          <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                        </div>
+                        <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                          <div class="row">
+                            <div class="xlarge-12 large-12 medium-12 small-24 columns relative margin-bottom-2">
+                              <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                            </div>
+                            <div class="xlarge-12 large-12 medium-12 small-24 columns relative margin-bottom-2">
+                              <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="xlarge-24 large-24 medium-24 small-24 columns relative">
+                          <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns text-right">
+                      <div style="width: 40%; height: 50px" class="dummy-holder"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dashboard_profile_dummy" class="margin-top-12 dummies auth__content row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+        <div class="xlarge-24 large-24 medium-24 small-24 column">
+          <div class="section content transparent row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <ul class="breadcrumbs flow">
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="xlarge-16 large-18 medium-22 small-22 columns margin-top-2 margin-bottom-2">
+          <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-24 small-24 columns margin-bottom-2">
+              <div class="well">
+                <div class="row">
+                  <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                    <div style="width: 70%; height: 50px" class="dummy-holder"></div>
+                    <hr class="yellow">
+                  </div>
+                  <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                    <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                  </div>
+                  <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                    <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                  </div>
+                  <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                    <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                  </div>
+                  <div class="xlarge-24 large-24 medium-24 small-24 columns text-right">
+                    <div style="width: 40%; height: 50px" class="dummy-holder"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dashboard_questionnaire_dummy" class="margin-top-12 dummies auth__content row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+        <div class="xlarge-24 large-24 medium-24 small-24 column">
+          <div class="section content transparent row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <ul class="breadcrumbs flow">
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+                <li style="width: 20%" class="breadcrumbs__item"><span class="breadcrumbs__item__label show-for-small-only">&nbsp;</span><span class="breadcrumbs__item__label hide-for-small-only"> 
+                    <div style="width: 60px; height: 17px" class="dummy-holder"></div></span><span class="breadcrumbs__item__bullet"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="xlarge-24 large-24 medium-24 small-24 columns margin-top-2 margin-bottom-2">
+          <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <div class="row">
+                <div class="xlarge-16 large-18 medium-24 small-24 columns">
+                  <div class="well">
+                    <div class="row">
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 70%; height: 50px" class="dummy-holder"></div>
+                        <hr>
+                        <div style="width: 100%; height: 30px" class="dummy-holder margin-bottom-2"></div>
+                        <div class="row margin-top-4">
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                            <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                          </div>
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                            <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                          </div>
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                            <div style="width: 100%; height: 30px" class="dummy-holder"></div>
+                          </div>
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns margin-top-4 text-right">
+                            <div style="width: 40%; height: 50px" class="dummy-holder"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="xlarge-8 large-6 columns hide-for-medium-only hide-for-small-only">
+                  <div style="width: 70%; height: 50px" class="dummy-holder"></div>
+                  <div class="row margin-top-1">
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                      <div style="width: 100%; height: 17px" class="dummy-holder"></div>
+                    </div>
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                      <div style="width: 100%; height: 17px" class="dummy-holder"></div>
+                    </div>
+                    <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                      <div style="width: 100%; height: 17px" class="dummy-holder"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dashboard_goal_dummy" class="margin-top-12 dummies auth__content row align-center">
+        <div class="xlarge-24 large-24 medium-24 small-24 columns margin-top-2">
+          <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <div class="row">
+                <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                  <div class="well">
+                    <div class="row">
+                      <div class="columns shrink hide-for-small-only">
+                        <div class="avatar__wrapper">
+                          <div class="avatar"></div>
+                        </div>
+                      </div>
+                      <div class="columns expand">
+                        <div class="row">
+                          <div class="xlarge-12 large-12 medium-24 small-24 columns margin-bottom-2">
+                            <div class="row">
+                              <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                                <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                              </div>
+                              <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                                <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                              </div>
+                              <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                                <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="xlarge-12 large-12 medium-24 small-24 columns text-right align-middle margin-bottom-2">
+                            <div class="row">       
+                              <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                                <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <hr>
+                        <div class="row">                                   
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                            <div class="row">
+                              <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                                <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                              </div>
+                            </div>
+                            <hr>
+                          </div>
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                            <div class="row">
+                              <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                                <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                              </div>
+                            </div>
+                            <hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns relative">
+                        <div class="row">
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                            <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                          </div>
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                            <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                          </div>
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                            <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                          </div>
+                          <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                            <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="xlarge-12 large-16 medium-16 small-24 columns text-center">
+                  <div class="well">
+                    <div class="row">
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                        <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="xlarge-12 large-8 medium-8 small-24 columns text-center">
+                  <div class="well">
+                    <div class="row">
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                        <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="xlarge-12 large-12 medium-12 small-24 columns text-center">
+                  <div class="well">
+                    <div class="row">
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                        <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="xlarge-12 large-12 medium-12 small-24 columns text-center">
+                  <div class="well">
+                    <div class="row">
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                        <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dashboard_transactions_dummy" class="margin-top-12 dummies auth__content row align-center">
+        <div class="xlarge-24 large-24 medium-24 small-24 column">
+          <div class="section content transparent row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <div class="row align-justify align-middle">
+                <div class="xlarge-18 large-18 medium-18 small-24 columns hide-for-small-only">
+                  <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                </div>
+                <div class="xlarge-6 large-6 medium-6 small-24 columns text-right">
+                  <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xlarge-24 large-24 medium-24 small-24 columns margin-top-2">
+          <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <div class="row">
+                <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                  <div class="well">
+                    <div class="row">
+                      <div class="xlarge-18 large-18 medium-16 small-24 columns align-self-middle">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-6 large-6 medium-8 small-24 columns text-right relative">
+                        <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dashboard_reports_dummy" class="margin-top-12 dummies auth__content row align-center">
+        <div class="xlarge-24 large-24 medium-24 small-24 column">
+          <div class="section content transparent row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <div class="row align-justify align-middle">
+                <div class="xlarge-18 large-18 medium-18 small-24 columns hide-for-small-only">
+                  <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                </div>
+                <div class="xlarge-6 large-6 medium-6 small-24 columns text-right">
+                  <div style="width: 40%; height: 30px" class="dummy-holder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xlarge-24 large-24 medium-24 small-24 columns margin-top-2">
+          <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+            <div class="xlarge-16 large-18 medium-22 small-22 columns">
+              <div class="row">
+                <div class="xlarge-24 large-24 medium-24 small-24 columns margin-bottom-2">
+                  <div class="well">
+                    <div class="row">
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                      <div class="xlarge-24 large-24 medium-24 small-24 columns">
+                        <div style="width: 90%; height: 17px" class="dummy-holder"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="margin: 0 !important; width: 100%; height: 5.4rem;" class="row align-center align-self-bottom">
+      <div class="xlarge-16 large-18 medium-22 small-22 columns align-middle">
+        <div class="row align-center small-collapse medium-collapse large-collapse xlarge-collapse">
+          <div class="xlarge-4 large-4 medium-4 small-22 columns">
+            <div style="width: 40%; height: 17px" class="dummy-holder"></div>
+          </div>
+          <div class="xlarge-4 large-4 medium-4 small-22 columns">
+            <div style="width: 40%; height: 17px" class="dummy-holder"></div>
+          </div>
+          <div class="xlarge-16 large-16 medium-16 small-22 columns align-left">
+            <div style="width: 20%; height: 17px" class="dummy-holder"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <link href="/css/styles.min.css?cef7cc762cc837bcf84e" rel="stylesheet">
+  <script src="/assets/cef7cc762cc837bcf84e/vendor.bundle.js" type="application/javascript"></script>
+  <script src="/assets/cef7cc762cc837bcf84e/common.js" type="application/javascript"></script>
+</body>

@@ -1,0 +1,11 @@
+--2017-10-25 08:35:40--  https://assets.app.binck.nl/localisation/i18n/nl.json?crossorigin=anonymous
+Resolving assets.app.binck.nl... 54.192.136.212, 54.192.136.24, 54.192.136.228, ...
+Connecting to assets.app.binck.nl|54.192.136.212|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 22811 (22K) [application/json]
+Saving to: ‘nl.json?crossorigin=anonymous’
+
+nl.json?crossorigin=anonymou   0%[                                             ]       0  --.-KB/s               nl.json?crossorigin=anonymou 100%[============================================>]  22.28K  --.-KB/s    in 0.1s    
+
+2017-10-25 08:35:41 (198 KB/s) - ‘nl.json?crossorigin=anonymous’ saved [22811/22811]
+

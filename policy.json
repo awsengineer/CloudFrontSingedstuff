@@ -1,0 +1,12 @@
+{
+   "Statement":[
+      {
+         "Resource":"https://d26zdvjo97enw7.cloudfront.net/private/test",
+         "Condition":{
+            "DateLessThan":{
+               "AWS:EpochTime":1508891978
+            }
+         }
+      }
+   ]
+}
